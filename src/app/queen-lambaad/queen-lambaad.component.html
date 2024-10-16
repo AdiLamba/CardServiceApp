@@ -1,0 +1,18 @@
+<mat-grid-list cols="3" rowHeight="1:1">
+    <mat-grid-tile>
+        <h1 [ngClass]="{'BLACKlambaad' : lambaadSuit === 'Spades' || lambaadSuit === 'Clubs', 
+                        'REDlambaad' : lambaadSuit === 'Diamonds' || lambaadSuit === 'Hearts'}"
+                        >{{lambaadTitle}}</h1>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <img src="{{lambaadImage}}" alt="{{lambaadTitle}}" width="150" [id]="lambaadSuit"/>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <div [ngStyle]="{margin : '10'}">
+        <button mat-raised-button (click)="lambaadRotate(lambaadDegree)" color="primary">Click to turn card {{lambaadDegree}} degrees</button>
+        <br/>
+        <br/>
+        <button mat-raised-button (click)="lambaadRotate(lambaadZero)" color="primary">Click to return card to {{lambaadZero}} degrees</button>
+        </div>
+    </mat-grid-tile>
+</mat-grid-list>

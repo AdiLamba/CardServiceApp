@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+#HF{
+    background-color: goldenrod;
+    color:darkblue;
+    text-align: center;
+    margin: 10px;
+}
+
+.REDlambaad {
+    color : crimson;
+    font-weight : bold;
+    text-align: center;
+    font-variant : small-caps;
+    font-size : 1.5em;
+
+
+}
+
+.BLACKlambaad {
+    color : black;
+    font-weight : bold;
+    text-align: center;
+    font-variant : small-caps;
+    font-size : 1.5em;
+}
